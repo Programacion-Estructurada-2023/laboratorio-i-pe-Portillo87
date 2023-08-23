@@ -1,69 +1,116 @@
-﻿using System;
+﻿﻿using System;
 
-class Program
+namespace MyApp// Note: actual namespace depends on the project name.
 {
-    static void Main(string[] args)
+    internal class Program
     {
-    
-        // Declarar variables de tipo texto y capturar valores desde la consola.
-        Console.Write("Ingrese el Departamento: ");
-        string? departamento = Console.ReadLine();
+         static void Main(string[] args)
+        {
+            //Declaración y asignación de tipo texto
 
-        Console.Write("Ingrese el Municipio: ");
-        string? municipio = Console.ReadLine();
+            string? departamento, municipio, ciudad;
+            Console.Write("\n Ingrese el nombre del departamento: ");
+            departamento = Console.ReadLine();
+            Console.Write("\n Ingrese el nombre del municipio: ");
+            municipio = Console.ReadLine();
+            Console.Write("\n Ingrese el nombre de la ciudad: ");
+            ciudad = Console.ReadLine();
 
-        Console.Write("Ingrese la Ciudad: ");
-        string? ciudad = Console.ReadLine();
+            string? colonia = "Ciudad Jardin";
+            string? colorCasa = "Celeste";
 
+            //Declaracion tipo int
 
-        //Declarar dos variables de texto, asignando su valor desde la declaración. 
-        string? colonia = "Ciudad Jarin";
-        string? colorCasa = "Celeste";
+            int añosViviendo;
+            int edadActual;
+            Console.Write("\n Ingresar los años que lleva viviendo su colonia: ");
+            añosViviendo = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n Ingresar su edad actual: ");
+            edadActual = Convert.ToInt32(Console.ReadLine());
 
-        // Declarar y asignar valores a variables enteras desde consola.
-        Console.WriteLine("Ingresar los años que ha vivido en su colonia actual: ");
-        string? añosResidencia = Console.ReadLine();
+            DateTime fechaNacimiento = new DateTime(1987, 12, 21);
+            DateTime fechaActual = DateTime.Now;
 
-        Console.WriteLine("Ingresar su edad: ");
-        string? edadActual = Console.ReadLine();
+            //Aplicación de funciones a variables de texto
 
-        // Declarar y asignar valores a variables DateTime.
-        DateTime fechaNacimiento = new DateTime(1987, 12, 21); 
-        DateTime fechaActual = DateTime.Now;
+            //Comparacion de cadenas
+            
+            Console.WriteLine("\n************Comparacion de cadenas************");
+            Console.WriteLine("\n Colonia y Ciudad son iguales? >>> " + string.Equals(colonia, ciudad));
+            Console.WriteLine("\n Municipio y Ciudad son iguales? >>> " + string.Equals(municipio, ciudad));
 
-    
-        // Aplicar funciones a variables de tipo bool, string, y int.
-        bool comparacion = ciudad == municipio; 
-        string? textoConcatenado = departamento + " - " + municipio + " - " + ciudad;
-        string? mayusculaColonia = colonia.ToUpper();
-        string? minusculaColonia = colonia.ToLower();
-        string? cadenaLimpia = colorCasa.Trim();
-        int longitudColonia = colonia.Length;
-        int longitudColorCasa = colorCasa.Length;
+            //Funcion de concatenacion 
 
-        DateTime fecha_Actual = fechaActual.AddDays(14);
-        DateTime fecha_especifica = fechaNacimiento.AddDays(14);
-        bool mayorDate = fecha_Actual > fecha_especifica;
-        bool menorDate = fecha_Actual < fecha_especifica;
+            string? concatenacion = departamento + " " + municipio +"  "+ ciudad;
+            Console.WriteLine("\n Concatenación de texto >>> " + concatenacion);
 
-        // Mostrar los resultados.
-        Console.WriteLine("************************Imprimiendo Datos**********************");
-        Console.WriteLine("Variables tipo texto: " + colonia + ", " + colorCasa);
-        Console.WriteLine("Comparación de cadenas: " + comparacion + " " + ciudad + ", " + municipio);
-        Console.WriteLine("Impresion de variables tipo entero: " + añosResidencia + " años en su colonia");
-        Console.WriteLine("Impresion de variable tipo entero: " + edadActual + " años de edad");
-        Console.WriteLine("Texto concatenado: " + textoConcatenado);
-        Console.WriteLine("Funcion texto a mayúscula: " + mayusculaColonia);
-        Console.WriteLine("Funcoion minuscula: " + minusculaColonia);
-        Console.WriteLine("Funcion Cadena limpia: " + cadenaLimpia);
-        Console.WriteLine("Imprimiendo fechas actuales y especificas: " + fechaActual + ", " + fechaNacimiento);
-        Console.WriteLine("Longitud de la Colonia: " + longitudColonia);
-        Console.WriteLine("Variable tipo date para DOB mas 2 semanas: " + fecha_especifica);
-        Console.WriteLine("Variable tipo date mas 2 semanas " + fecha_Actual);
-        Console.WriteLine("Longitud del Color de Casa: " + longitudColorCasa);
-        Console.WriteLine("************************Fin de Imprimiendo de Datos**********************");
-        Console.ReadKey();
+            //Funcion de mayusculas
 
-        // Autoevaluacion 8 de 10.
+            string? mayusculas = departamento.ToUpper();
+            Console.WriteLine("\n Departamento en mayúsculas >>> " + mayusculas);
+
+            ////Funcion de limpiado
+
+            string? limpiado = municipio.Trim();
+            Console.WriteLine("\n Municipio limpiado de espacios >>> " + limpiado);
+
+            //Funcion de longitud
+
+            int longitudColonia = colonia.Length;
+            int longitudColorCasa = colorCasa.Length;
+            Console.WriteLine("\n Longitud de la Colonia >>> " + longitudColonia);
+            Console.WriteLine("\n Longitud del Color de Casa >>> " + longitudColorCasa);
+
+            //Aplicación de funciones a variables de fecha
+
+            //Formateo de fecha
+
+            Console.WriteLine("\n\n************Formateo de fechas************");
+            Console.WriteLine("\n Fecha de nacimiento >>> " + fechaNacimiento.ToString("dd/MM/yyyy"));
+            Console.WriteLine("\n Fecha actual >>> " + fechaActual.ToString("dd/MM/yyyy"));
+            
+            //Funcion de agregar semanas a las fechas
+
+            DateTime fechaNacimientoMas2Semanas = fechaNacimiento.AddDays(14);
+            DateTime fechaActualMas2Semanas = fechaActual.AddDays(14);
+
+            Console.WriteLine("\n\n************Fechas con dos semanas adiciolanes************");
+            Console.WriteLine("\n Fecha de nacimiento + 2 semanas >>> " + fechaNacimientoMas2Semanas.ToString("dd/MM/yyyy"));
+            Console.WriteLine("\n Fecha actual + 2 semanas >>> " + fechaActualMas2Semanas.ToString("dd/MM/yyyy"));
+
+            //Funcion de comparar fechas
+
+            bool fecha1Mayor = fechaNacimiento > fechaActual;
+            bool fecha1Menor = fechaNacimiento < fechaActual;
+            Console.WriteLine("\n Fecha de nacimiento mayor que fecha actual? >>> " + fecha1Mayor);
+            Console.WriteLine("\n Fecha de nacimiento menor que fecha actual? >>> " + fecha1Menor);
+
+            //Impresión de valores en consola
+            Console.WriteLine("\n\n*************************************\n");
+            Console.WriteLine("\n--------Inicio de impresion de valores--------" );
+            Console.WriteLine("\n\n************Valores ingresados de variables de texto************");
+            Console.WriteLine("\n Departamento >>> " + departamento);
+            Console.WriteLine("\n Municipio >>> " + municipio);
+            Console.WriteLine("\n Ciudad >>> " + ciudad);
+            Console.WriteLine("\n Colonia >>> " + colonia);
+            Console.WriteLine("\n Color de Casa >>> " + colorCasa);
+
+            Console.WriteLine("\n\n************Valores de variable enteras************");
+            Console.WriteLine("\n Años de vivir en la residencia actual >>> " + añosViviendo);
+            Console.WriteLine("\n Edad actual >>> " + edadActual);
+
+            Console.WriteLine("\n\n************Comparacion de cadenas************");
+            Console.WriteLine("\n Colonia y Ciudad son iguales >>> " + string.Equals(colonia, ciudad));
+            Console.WriteLine("\n Municipio y Ciudad son iguales >>> " + string.Equals(municipio, ciudad));
+
+            Console.WriteLine("\n\n************Valores obtenidos de funciones de fecha************");
+            Console.WriteLine("\n Fecha de nacimiento >>> " + fechaNacimiento.ToString("dd/MM/yyyy"));
+            Console.WriteLine("\n Fecha actual >>> " + fechaActual.ToString("dd/MM/yyyy"));
+            Console.WriteLine("\n----------------Fin de impresion----------------\n\n");
+            Console.WriteLine("\n*************************************************************************\n");
+
+            //Autoevaluacion 8
+
+        }
     }
 }
