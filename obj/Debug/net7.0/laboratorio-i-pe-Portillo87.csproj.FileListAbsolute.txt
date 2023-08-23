@@ -1,0 +1,14 @@
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\bin\Debug\net7.0\laboratorio-i-pe-Portillo87.exe
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\bin\Debug\net7.0\laboratorio-i-pe-Portillo87.deps.json
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\bin\Debug\net7.0\laboratorio-i-pe-Portillo87.runtimeconfig.json
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\bin\Debug\net7.0\laboratorio-i-pe-Portillo87.dll
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\bin\Debug\net7.0\laboratorio-i-pe-Portillo87.pdb
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.AssemblyInfoInputs.cache
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.AssemblyInfo.cs
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.csproj.CoreCompileInputs.cache
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.dll
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\refint\laboratorio-i-pe-Portillo87.dll
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.pdb
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\laboratorio-i-pe-Portillo87.genruntimeconfig.cache
+C:\Users\PEDIDOS.SECO\Documentos de Estudios\PROGRAMACION ESTRUCTURADA #2\Laboratorio #1\laboratorio-i-pe-Portillo87\obj\Debug\net7.0\ref\laboratorio-i-pe-Portillo87.dll
