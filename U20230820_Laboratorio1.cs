@@ -32,7 +32,7 @@ class Program
         DateTime fechaActual = DateTime.Now;
 
     
-        // Aplicar funciones a variables de tipo str, bool, y int.
+        // Aplicar funciones a variables de tipo bool, string, y int.
         bool comparacion = ciudad == municipio; 
         string? textoConcatenado = departamento + " - " + municipio + " - " + ciudad;
         string? mayusculaColonia = colonia.ToUpper();
